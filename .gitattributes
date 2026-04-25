@@ -1,0 +1,19 @@
+# Suppress AI attribution metadata from commits
+# Place this file as .gitattributes in the repo root
+
+# Treat all files as text, no special diff attributes
+* text=auto
+
+# Do not export AI tool metadata in archives or diffs
+.claude_attributions export-ignore
+.ai-context export-ignore
+CLAUDE.md export-ignore
+.cursorrules export-ignore
+
+# Ensure consistent line endings
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
